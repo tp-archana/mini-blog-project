@@ -18,7 +18,7 @@ def post_blog(request):
 
 def post_view(request):
     posts = PostModel.objects.all()
-    return render(request, 'list.html', {'posts': posts})
+    return render(request, 'home.html', {'posts': posts})
 
 
 def post_detail(request, pk):
